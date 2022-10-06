@@ -14,6 +14,8 @@ cd arch
 chmod +x arch1.sh
 chmod +x arch2.sh
 
+./arch1.sh
+
 cryptsetup luksFormat /dev/sdb2
 
 cryptsetup open /dev/sdb2 cryptlvm
