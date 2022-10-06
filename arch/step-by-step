@@ -1,3 +1,15 @@
+#run gdisk
+
+gdisk /dev/sdb
+
+create 500M partition as EF00
+create partition as 8300
+
+pacman -S git
+
+https://github.com/andrewb91/arch.git
+
+./
 
 cryptsetup luksFormat /dev/sdb2
 
