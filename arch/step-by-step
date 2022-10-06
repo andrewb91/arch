@@ -9,7 +9,10 @@ pacman -S git
 
 https://github.com/andrewb91/arch.git
 
-./
+cd arch
+
+chmod +x arch1.sh
+chmod +x arch2.sh
 
 cryptsetup luksFormat /dev/sdb2
 
