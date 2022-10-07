@@ -72,16 +72,6 @@ echo root:password | chpasswd
 
 pacman -S grub efibootmgr networkmanager network-manager-applet wireless_tools wpa_supplicant dialog os-prober mtools dosfstools base-devel git bluez bluez-utils pulseaudio-bluetooth cups hplip xdg-utils xdg-users-dirs gufw openssh acpid xorg lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings firefox arc-gtk-theme arc-icon-theme obs-studio vlc picom cairo openbox thunderbird obconf ttf-dejavu ttf-liberation pcmanfm xfce4-terminal xfce4-panel xfce4-pulseaudio-plugin xfce4-weather-plugin lxappearance lxappearance-obconf feh redshift transmission-gtk blueman youtube-dl samba cmake gnome-mahjongg engrampa pavucontrol openvpn networkmanager-openvpn gimp okular mesa fuse2 fuse3 ntfs-3g exfat-utils dkms man-db man-pages system-config-printer clamav libreoffice-fresh arandr numlockx gvfs gvfs-smb hplip alsa-utils dnsutils materia-theme adwaita-icon-theme rofi papirus-icon-theme sane-airscan libimobiledevice gvfs-gphoto2 ifuse firefox dkms haveged rsync
 
-# pacman -S --noconfirm xf86-video-amdgpu
-# pacman -S --noconfirm nvidia nvidia-utils nvidia-settings
-
-# mkinitcpio 
-vim /etc/minitcpio.conf
-
-HOOKS=(base udev autodetect keyboard modconf block encrypt lvm2 resume filesystems fsck)
-save/quit
-mkinitcpio -p linux
-
 #GRUB
 grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB #change the directory to /boot/efi is you mounted the EFI partition at /boot/efi
 
@@ -95,6 +85,14 @@ vim /etc/default/grub
 
 (UUID for /dev/sdb2 for cryptlvm  and swap UUID for resume)
 GRUB_CMDLINE_LINUX="cryptdevice=UUID=274ffc89-c334-4087-bbaf-cfcc61a3a58f:cryptlvm root=/dev/vg1/root resume=UUID=ed5a70e6-0d6e-44b4-9e5e-0a23911ebbc5"
+
+# mkinitcpio 
+vim /etc/minitcpio.conf
+
+HOOKS=(base udev autodetect keyboard modconf block encrypt lvm2 resume filesystems fsck)
+save/quit
+mkinitcpio -p linux
+
 
 RUN ./arch3.sh
 
