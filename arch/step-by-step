@@ -110,5 +110,3 @@ useradd -m drew
 echo drew:password | chpasswd
 
 echo "drew ALL=(ALL) ALL" >> /etc/sudoers.d/drew
-
-
