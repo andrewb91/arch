@@ -45,6 +45,10 @@ mount /dev/vg1/home /mnt/home
 
 swapon /dev/vg1/swap
 
+run lsblk to verify formatting and mounts
+
+./arch2.sh
+
 pacstrap /mnt base linux linux-firmware vim intel-ucode lvm2
 
 genfstab -U /mnt >> /mnt/etc/fstab
@@ -73,22 +77,22 @@ pacman -S grub efibootmgr networkmanager network-manager-applet wireless_tools w
 
 # mkinitcpio 
 vim /etc/minitcpio.conf
-#
+
 HOOKS=(base udev autodetect keyboard modconf block encrypt lvm2 resume filesystems fsck)
 save/quit
 mkinitcpio -p linux
 
-GRUB
+#GRUB
 grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB #change the directory to /boot/efi is you mounted the EFI partition at /boot/efi
 
 configure GRUB as follows:
 blkid >> block.txt
 vim block.txt
 
-cc line for /dev/sdb2
+"cc" line for /dev/sdb2
 
 vim /etc/default/grub
-p
+
 (UUID for /dev/sdb2 for cryptlvm  and swap UUID for resume)
 GRUB_CMDLINE_LINUX="cryptdevice=UUID=274ffc89-c334-4087-bbaf-cfcc61a3a58f:cryptlvm root=/dev/vg1/root resume=UUID=ed5a70e6-0d6e-44b4-9e5e-0a23911ebbc5"
 
@@ -104,7 +108,6 @@ systemctl enable acpid
 
 useradd -m drew
 echo drew:password | chpasswd
-usermod -aG libvirt ermanno
 
 echo "drew ALL=(ALL) ALL" >> /etc/sudoers.d/drew
 
