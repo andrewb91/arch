@@ -28,5 +28,3 @@ mkdir /mnt/home
 mount /dev/vg1/home /mnt/home
 
 swapon /dev/vg1/swap
-
-#lsblk
