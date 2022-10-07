@@ -27,9 +27,3 @@ pacman -S --noconfirm grub efibootmgr networkmanager network-manager-applet wire
 # pacman -S --noconfirm nvidia nvidia-utils nvidia-settings
 
 grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB #change the directory to /boot/efi is you mounted the EFI partition at /boot/efi
-
-
-
-
-
-
