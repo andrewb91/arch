@@ -14,7 +14,7 @@ cd arch
 chmod +x arch1.sh
 chmod +x arch2.sh
 
-./arch1.sh
+RUN ./arch1.sh
 
 cryptsetup luksFormat /dev/sdb2
 
@@ -47,7 +47,7 @@ swapon /dev/vg1/swap
 
 run lsblk to verify formatting and mounts
 
-./arch2.sh
+RUN ./arch2.sh
 
 pacstrap /mnt base linux linux-firmware vim intel-ucode lvm2
 
@@ -95,6 +95,8 @@ vim /etc/default/grub
 
 (UUID for /dev/sdb2 for cryptlvm  and swap UUID for resume)
 GRUB_CMDLINE_LINUX="cryptdevice=UUID=274ffc89-c334-4087-bbaf-cfcc61a3a58f:cryptlvm root=/dev/vg1/root resume=UUID=ed5a70e6-0d6e-44b4-9e5e-0a23911ebbc5"
+
+RUN ./arch3.sh
 
 grub-mkconfig -o /boot/grub/grub.cfg
 
