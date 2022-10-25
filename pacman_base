@@ -1,0 +1,3 @@
+#!bin/bash
+
+pacman -S xorg lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings firefox arc-gtk-theme arc-icon-theme obs-studio vlc picom cairo openbox thunderbird obconf ttf-dejavu ttf-liberation pcmanfm xfce4-terminal xfce4-panel xfce4-pulseaudio-plugin xfce4-weather-plugin lxappearance lxappearance-obconf feh redshift transmission-gtk blueman youtube-dl samba cmake gnome-mahjongg engrampa pavucontrol openvpn networkmanager-openvpn gimp okular mesa fuse2 fuse3 ntfs-3g exfat-utils dkms man-db man-pages system-config-printer clamav libreoffice-fresh arandr numlockx gvfs gvfs-smb hplip alsa-utils dnsutils materia-theme adwaita-icon-theme rofi papirus-icon-theme sane-airscan libimobiledevice gvfs-gphoto2 ifuse firefox dkms haveged rsync
