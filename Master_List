@@ -4,15 +4,16 @@ make games bypass VPN
 https://bbs.archlinux.org/viewtopic.php?id=226506
 improve lynis score 75+?
 better icons on panel or change panels
-Set up keyboard shortcuts for networking
+Set up custom keybinds for taskbar functions.
 ability to move/delete files from iphone.
 live wallpapers https://github.com/terroo/wallset
 i3 set up and config'd
+find out how to ignore flagged AUR pkgs
 
 
-# Set up keyboard shortcuts for Sound
+# Set up keybinds for vol ctrl
 # Protonvpn autostart at boot
-# setup tlp (maybe not need now?)
+# setup battery management (maybe not tlp?)
 # make sure that iphone tethering works
 
 sudo reflector -c 'United States' -a 6 --sort rate --save /etc/pacman.d/mirrorlist
@@ -38,7 +39,7 @@ https://aur.archlinux.org/packages/auto-cpufreq
 yay -S auto-cpufreq
 systemctl enable --now auto-cpufreq.service
 
-   #TLP
+#TLP
 sudo pacman -S tlp tlp-rdw
 systemctl enable tlp.service
 systemctl enable NetworkManager-dispatcher.service
