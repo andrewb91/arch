@@ -2,16 +2,16 @@
 
 make games bypass VPN
 https://bbs.archlinux.org/viewtopic.php?id=226506
-
 improve lynis score 75+?
 better icons on panel or change panels
-Set up keyboard shortcuts for Sound?
+Set up keyboard shortcuts for networking
 ability to move/delete files from iphone.
 live wallpapers https://github.com/terroo/wallset
+i3 set up and config'd
 
 
-#Set up keyboard shortcuts for Sound
-# protonvpn autostart at boot
+# Set up keyboard shortcuts for Sound
+# Protonvpn autostart at boot
 # setup tlp (maybe not need now?)
 # make sure that iphone tethering works
 
