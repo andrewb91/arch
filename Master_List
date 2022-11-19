@@ -92,6 +92,12 @@ ttf-ms-fonts
 zoom
 rofi-power-menu
 
+polybar:
+yay -S polybar
+sudo pacman -S xorg-fonts-misc
+yay -S siji-git ttf-unifont
+
+
 mkinitcpio-numlock
 HOOKS=(base udev autodetect keyboard keymap numlock modconf block encrypt filesystems resume fsck)
 mkinitcpio -p linux(-lts/-zen)
@@ -101,7 +107,9 @@ mkinitcpio -p linux(-lts/-zen)
 
 install libimobiledevice. (included in default pkglist)
 
-Next enable Personal Hotspot on your iPhone and plug it into your computer. At this point you will have a new ethernet device available and should be able to use any network manager to connect to the internet through the new iPhone ethernet device, just like you would any other ethernet connection.
+Next enable Personal Hotspot on your iPhone and plug it into your computer. At this point you will have a new ethernet device available 
+and should be able to use any network manager to connect to the internet through the new iPhone ethernet device, just like you would 
+any other ethernet connection.
 
 #i3
 https://www.youtube.com/playlist?list=PL5ze0DjYv5DbCv9vNEzFmP6sU7ZmkGzcf
