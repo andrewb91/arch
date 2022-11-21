@@ -1,5 +1,19 @@
 # FIX-ITS
 
+LOOK HERE!!
+https://forums.bunsenlabs.org/viewtopic.php?id=7386
+ <keybind key="A-F3">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>dmenu-bind</name>
+        </startupnotify>
+        <command>~/.config/dmenu/dmenu-bind.sh</command>
+      </action>
+    </keybind>
+
+
+
 make games bypass VPN
 https://bbs.archlinux.org/viewtopic.php?id=226506
 improve lynis score 75+?
