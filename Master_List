@@ -10,7 +10,8 @@ live wallpapers https://github.com/terroo/wallset
 i3 set up and config'd
 find out how to ignore flagged AUR pkgs
 keybinds to turn on, volume up/down/mute on microphone 
-keybind to open nm-applet
+keybind to open the network manager with rofi.
+
 
 
 # Set up keybinds for vol ctrl
