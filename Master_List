@@ -1,16 +1,7 @@
 # FIX-ITS
 
-LOOK HERE!!
-https://forums.bunsenlabs.org/viewtopic.php?id=7386
- <keybind key="A-F3">
-      <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-          <name>dmenu-bind</name>
-        </startupnotify>
-        <command>~/.config/dmenu/dmenu-bind.sh</command>
-      </action>
-    </keybind>
+
+   
 
 
 
@@ -24,10 +15,10 @@ live wallpapers https://github.com/terroo/wallset
 i3 set up and config'd
 find out how to ignore flagged AUR pkgs
 keybinds to turn on, volume up/down/mute on microphone 
-keybind to open the network manager with rofi.
 
 
 
+# keybind to open the network manager with rofi.
 # Set up keybinds for vol ctrl
 # Protonvpn autostart at boot
 # setup battery management (maybe not tlp?)
@@ -161,6 +152,14 @@ sudo chmod 600 /swapfile
 sudo swapon /swapfile
 #add entry to /etc/fstab
 /swapfile 		none    	swap    	sw 	0 0
+
+# rc.xml to add rofi-wifi-menu
+https://forums.bunsenlabs.org/viewtopic.php?id=7386
+
+          <name>dmenu-bind</name>
+        </startupnotify>
+        <command>~/.config/rofi/rofi-wifi-menu.sh</command>
+      </action>
 
 
 # Printer
