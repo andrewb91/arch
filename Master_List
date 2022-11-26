@@ -1,14 +1,7 @@
 # FIX-ITS
 
 
-   
-
-
-
-make games bypass VPN
-https://bbs.archlinux.org/viewtopic.php?id=226506
 improve lynis score 75+?
-better icons on panel or change panels
 Set up custom keybinds for taskbar functions.
 ability to move/delete files from iphone.
 live wallpapers https://github.com/terroo/wallset
@@ -23,6 +16,8 @@ keybinds to turn on, volume up/down/mute on microphone
 # Protonvpn autostart at boot
 # setup battery management (maybe not tlp?)
 # make sure that iphone tethering works
+# make games bypass VPN  https://bbs.archlinux.org/viewtopic.php?id=226506
+# better icons on panel or change panels
 
 # Copy with permissions
 cp -rp /home/drew dest-dir/
