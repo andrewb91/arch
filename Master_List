@@ -24,6 +24,12 @@ cp -rp /home/drew dest-dir/
 
 sudo reflector -c 'United States' -a 6 --sort rate --save /etc/pacman.d/mirrorlist
 
+# Holding back packages
+
+Add package name to /etc/pacman.conf
+
+IgnorePkg = firefox
+
 pacman -S grub efibootmgr networkmanager network-manager-applet wireless_tools wpa_supplicant dialog os-prober mtools dosfstools base-devel git bluez bluez-utils pulseaudio-bluetooth cups xdg-utils xdg-user-dirs openssh acpid 
 
 # Basic packages:
