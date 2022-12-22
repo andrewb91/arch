@@ -281,15 +281,8 @@ sudo modprobe vboxdrv
 sudo usermod -aG vboxusers drew
 sudo pacman -S virtualbox-guest-iso
 
-#TO RESET:
 
-sudo systemctl disable lightdm (or whichever displaymanager is installed)
-sudo pacman -D --asdeps $(pacman -Qqe)
-sudo pacman -D --asexplicit base linux-zen linux-zen-headers linux-firmware git vim intel-ucode grub
-su -
-pacman -Qttdq | pacman -Rns -
-
-#rc.xml sound keys
+#rc.xml Sound Keys
     <!-- Keybindings for volume -->
  <keybind key="W-F3">
     <action name="Execute">
@@ -306,6 +299,17 @@ pacman -Qttdq | pacman -Rns -
       <command>pamixer -t</command>
     </action>
   </keybind>
+
+
+#TO RESET:
+
+sudo systemctl disable lightdm (or whichever displaymanager is installed)
+sudo pacman -D --asdeps $(pacman -Qqe)
+sudo pacman -D --asexplicit base linux-zen linux-zen-headers linux-firmware git vim intel-ucode grub
+su -
+pacman -Qttdq | pacman -Rns -
+
+
 
 
 
