@@ -1,23 +1,21 @@
 # FIX-ITS
 
 
-improve lynis score 75+?
-Set up custom keybinds for taskbar functions.
-ability to move/delete files from iphone.
-live wallpapers https://github.com/terroo/wallset
-i3 set up and config'd
-https://wiki.archlinux.org/title/IOS
-Using a graphical file manager
-
-File managers which use GVFS can interact with iOS devices. To access the media filesystem, install gvfs-gphoto2. To access the app document filesystem, install gvfs-afc.
-Note: When accessing the media filesystem, GVFS will only expose the device's photos and videos, not music.
-To access iOS files using Dolphin, install solid-gitAUR and kio-extras-gitAUR. This will expose both the media and app document filesystems. [3] 
-
-find out how to ignore flagged AUR pkgs
-keybinds to turn on, volume up/down/mute on microphone 
+1) improve lynis score 75+?
+2) Set up custom keybinds for taskbar functions.
+3) ability to move/delete files from iphone.
+4) live wallpapers https://github.com/terroo/wallset
+5) i3 set up and config'd
+6) Manage iphone over linux
+     https://wiki.archlinux.org/title/IOS
+     Using a graphical file manager
+     File managers which use GVFS can interact with iOS devices. To access the media filesystem, install gvfs-gphoto2. To access the app document filesystem, install gvfs-afc.
+     Note: When accessing the media filesystem, GVFS will only expose the device's photos and videos, not music.
+     To access iOS files using Dolphin, install solid-gitAUR and kio-extras-gitAUR. This will expose both the media and app document filesystems. [3] 
+7) keybinds to turn on, volume up/down/mute on microphone 
 
 
-
+# find out how to ignore flagged AUR pkgs
 # keybind to open the network manager with rofi.
 # Set up keybinds for vol ctrl
 # Protonvpn autostart at boot
