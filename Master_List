@@ -3,16 +3,17 @@
 
 1) improve lynis score 75+?
 2) Set up custom keybinds for taskbar functions.
-3) ability to move/delete files from iphone.
-4) live wallpapers https://github.com/terroo/wallset
-5) i3 set up and config'd
-6) Manage iphone over linux
+3) ability to move/delete files and photos from iphone without icloud or itunes.
      https://wiki.archlinux.org/title/IOS
-     Using a graphical file manager
-     File managers which use GVFS can interact with iOS devices. To access the media filesystem, install gvfs-gphoto2. To access the app document filesystem, install gvfs-afc.
+     Using a graphical file manager File managers which use GVFS can interact with iOS devices. To access the media filesystem, install gvfs-gphoto2. To access the app document filesystem, install gvfs-afc.
      Note: When accessing the media filesystem, GVFS will only expose the device's photos and videos, not music.
      To access iOS files using Dolphin, install solid-gitAUR and kio-extras-gitAUR. This will expose both the media and app document filesystems. [3] 
-7) keybinds to turn on, volume up/down/mute on microphone 
+4) live wallpapers 
+     https://github.com/terroo/wallset
+5) configure i3
+     https://www.youtube.com/playlist?list=PL5ze0DjYv5DbCv9vNEzFmP6sU7ZmkGzcf
+     https://i3wm.org/
+6) keybinds to turn on, volume up/down/mute on microphone 
 
 
 # find out how to ignore flagged AUR pkgs
