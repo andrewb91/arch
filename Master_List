@@ -120,6 +120,26 @@ mkinitcpio-numlock
 HOOKS=(base udev autodetect keyboard keymap numlock modconf block encrypt filesystems resume fsck)
 mkinitcpio -p linux(-lts/-zen)
 
+#Touchpad
+
+xinput list | grep Touchpad
+
+↳ DELL08CA:00 04F3:30C4 Touchpad          	id=18	[slave  pointer  (2)]
+
+sudo vim /etc/X11/xorg.conf.d/30-touchpad.conf
+
+Section "InputClass"
+    Identifier "DELL08CA:00 04F3:30C4 Touchpad"
+    Driver "libinput"
+    MatchIsTouchpad "on"
+    Option "Tapping" "on"
+    Option "TappingButtonMap" "lm"
+EndSection
+
+add any options from xinput list-props 18
+
+more libinput info:  https://wiki.archlinux.org/title/Libinput#Via_Xorg_configuration_file
+
 
 # Tethering over USB
 
